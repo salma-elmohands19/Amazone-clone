@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+   <section class="all">
+    <img src="img/amazon-logo-icon-png_44637.png" alt="" width="300px" class="Amazon">
+    <form action="#" id="form" onsubmit= " return formvalidate();">
+        <div class="input">
+    <div class="validation">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter Your Email">
+        <div class="error" id="error"></div>
+    </div>
+    <div class="validation">
+        <label for="Password">Password</label>
+        <input type="password" id="Password" placeholder="Enter Your Password">
+        <div class="error" id="error"></div>
+    </div>
+    <div class="validation">
+        <label for="number">Mobile number</label>
+        <input type="text" id="number" placeholder="Enter Your Mobile number">
+        <div class="error" id="error"></div>
+    </div>
+    <div class="validation">
+        <label for="Message">Message</label>
+        <input type="text" id="Message" placeholder="Enter Your Message">
+        <div class="error" id="error"></div>
+    </div>
+
+    <input type="submit" value="Sign in" class="submit" autofocus>
+</div>
+</form>
+<div class="account">
+<h1>Already Have an Account?</h1>
+<p>log in</p>
+</div>
+   </section> 
+
+ 
+
+  <script src="sign.js"></script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background: #bababa;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ...............start nav................... */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    padding: 10px 20px;
+    color: #fff;
+}
+.logo:hover{
+    border: 1px solid#fff;
+}
+.nav-country{
+    display: flex;
+    align-items: end;
+    margin-left: 15px;
+    font-size: 13px;
+    color: #c4c4c4;
+    cursor: pointer;
+}
+.nav-country h1{
+    font-size: 16px;
+    color: #fff;
+}
+.nav-country:hover{
+    border: 1px solid#fff;
+}
+.nav-search{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 15px;
+    max-width: 1000px;
+    color: gray;
+    border-radius: 4px;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+.nav-search-down{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px ;
+    gap: 5px;
+    background-color: #e5e5e5;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+}
+.nav-search-down:hover{
+    border: 1px solid #131921;
+}
+.nav-search-input{
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+}
+.nav-search-icon{
+    max-width: 50px;
+    padding: 12px;
+    background-color: #ffd64f;
+    border-radius:0 4px 4px 0 ;
+    cursor: pointer;
+}
+.nav-language{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.nav-language:hover{
+    border: 1px solid#fff;
+    width: 63px;
+    height: 40px;
+}
+.nav-text{
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.class-down{
+    position: absolute;
+    margin-top: 30px;
+    width: 293%;
+    height: 237px;
+    transition: 0.2s all ease;
+    background-color: #fff;
+    padding: 50px;
+    right: -92px;
+    opacity: 0;
+    z-index: 999;
+}
+.nav-text:hover .class-down{
+    opacity: 1;
+}
+.sign-in{
+    background-color: rgb(255, 214, 79);
+    outline: none;
+    border-radius: 5px;
+    color: rgb(19, 25, 33);
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    box-shadow:4px 6px 11px -7px #888888;
+    margin-top: -37px;
+}
+.class-down hr{
+    position: relative;
+    top: 17px;
+    width: 279px;
+    right: 26px;
+    color: #888888;
+    opacity: 0.4;
+}
+.class-down h4{
+    color: #6f7071;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.List-down{
+    margin-top: 40px;
+}
+.List-down h1{
+    color: #131921;
+    font-weight: bold;
+    font-size: 20px;
+}
+.List-down  li a{
+    color: #131921;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.List-down  li a:hover{
+    color:orange;
+}
+.order{
+    padding-top: 15px;
+}
+.nav-text:hover{
+    border: 1px solid#fff;
+}
+.nav-text p{
+    font-size: 10px;
+}
+.nav-text h1{
+    font-size: 14px;
+}
+.nav-cart{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.nav-cart:hover{
+    border: 1px solid#fff;
+}
+/* ................start nav bottom.......... */
+.nav-bottom{
+    background-color: #232f3e;
+    color: white;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    padding: 8px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    height: 42px;
+    overflow: hidden;
+}
+.left-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500px;
+}
+
+.nav-bottom img:hover{
+    border: 1px solid white; 
+}
+.nav-bottom .left-icon:hover{
+    border: 1px solid white;
+}
+.nav-bottom  p:hover{
+    border: 1px solid white;
+}
+/*................. end nav................. */
+
+
+
+
+/* .........start open nav ..............*/
+.open-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    display: none;
+    z-index: 999;
+}
+
+
+.open-nav-hello{
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    font-size: 10px;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    height: 56px;
+    width: 100%;
+}
+.open-nav-hello .fa-solid{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.open-nav-hello .exist{
+    position: absolute;
+    left: 270px;
+    background-color:#232f3e;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/* ...............swiper-section............... */
+.swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ .swiper-button-next{
+    color: white;
+ }
+ .swiper-button-prev{
+    color: white;
+
+ }
+
+
+ /* ............ start-product............. */
+
+.start-product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.products {
+    width: 300px;
+    border: 1px solid #232f3e;
+    padding: 10px;
+    cursor: pointer;
+}
+.products p:hover{
+    transition: 0.3s all ease; 
+    color:orange;
+}
+.techno-product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+}
+.footer{
+    background-color: #232f3e;
+    color: white;
+}
+.backtop{
+    background-color: #131921;
+}
+.backtop h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.table h1{
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.table li{
+    font-size: 15px;
+    padding: 5px;
+    list-style: none;
+    cursor: pointer;
+
+}
+.final{
+    display: flex;
+    justify-content: space-around;
+}
+.final p{
+    width: 420px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
